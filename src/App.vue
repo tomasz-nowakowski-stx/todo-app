@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container">
     <todo-list :todos="todos" />
     <create-todo @add-todo="addTodo" />
   </div>
@@ -43,3 +43,9 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+  .container {
+    width: 500px;
+  }
+</style>
